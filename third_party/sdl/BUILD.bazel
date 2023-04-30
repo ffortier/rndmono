@@ -1,0 +1,8 @@
+load("@bazel_skylib//rules:build_test.bzl", "build_test")
+
+build_test(
+    name = "sdl_build_test",
+    tags = ["manual"],
+    targets = ["@sdl//:sdl"],
+    visibility = ["//:__pkg__"],
+)
